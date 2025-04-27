@@ -35,12 +35,12 @@ public class Recinto {
             return false;
         }
         for(int i=0;i<this.animals.length;i++){
-            this.animals[i]=null;
+            if(this.animals[i]==null){
             this.animals[i]=animal;
             this.quantidadeDeAnimaisInseridos++;
             System.out.println("Animal inserido");
             return true;
-        }
+        }}
         return false;
     }
     public boolean removerAnimal(int id){

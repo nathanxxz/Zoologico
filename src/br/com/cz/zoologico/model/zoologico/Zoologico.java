@@ -29,12 +29,12 @@ public class Zoologico {
             return false;
         }
         for(int i=0;i<this.recintos.length;i++){
-            this.recintos[i]=null;
+            if(this.recintos[i]==null){
             this.recintos[i]=recinto;
             this.quantidadeRecintosInseridos++;
             System.out.println("Recinto inserido");
             return true;
-        }
+        }}
         return false;
     }
     public boolean removerRecinto(int id){
@@ -69,12 +69,12 @@ public class Zoologico {
             return false;
         }
         for(int i=0;i<this.funcionarios.length;i++){
-            this.funcionarios[i]=null;
+            if(this.funcionarios[i]==null){
             this.funcionarios[i]=funcionario;
             this.quantidadeFuncionarioInseridos++;
             System.out.println("Funcionario inserido");
             return true;
-        }
+        }}
         return false;
     }
     public boolean removerFuncionario(int id){
@@ -109,12 +109,12 @@ public class Zoologico {
             return false;
         }
         for (int i=0;i<this.visitantes.length;i++){
-            this.visitantes[i]=null;
+            if(this.visitantes[i]==null){
             this.visitantes[i]=visitante;
             this.quantidadeVisitantesInseridos++;
             System.out.println("Visitante inserido");
             return true;
-        }
+        }}
         return false;
     }
     public boolean removerVisitante(int id){
